@@ -1,0 +1,9 @@
+spring:
+  application:
+    name=boot-elasticsearch-crud
+
+elastic:
+  security:
+    secret : HJAS#$nk98632467%$#
+    username : elastic
+    password : user123
