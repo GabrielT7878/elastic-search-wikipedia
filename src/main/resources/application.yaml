@@ -7,3 +7,9 @@ elastic:
     secret : HJAS#$nk98632467%$#
     username : elastic
     password : user123
+
+springdoc:
+  api-docs:
+    path: /api/api-docs
+  swagger-ui:
+    path: /swagger/index.html

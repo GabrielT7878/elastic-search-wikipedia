@@ -21,6 +21,10 @@ public class WikipediaService {
         return wikipediaRepository.save(wikipedia);
     }
 
+    public void delete(String id) {
+        wikipediaRepository.deleteById(id);
+    }
+
     public Iterable<Wikipedia> findByTitle(String title, Pageable pageable) {
         return wikipediaRepository.findByTitle(pageable, title);
     }
