@@ -3,6 +3,7 @@ package com.javainuse.boot_elasticsearch_crud.controller;
 
 import com.javainuse.boot_elasticsearch_crud.model.Wikipedia;
 import com.javainuse.boot_elasticsearch_crud.service.WikipediaService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
+@Tag(name = "Wikipedia", description = "Request Wikipedia Documents")
 @RequestMapping("/wikipedia")
 public class WikipediaControllerImpl  implements WikipediaController {
     private final WikipediaService wikipediaService;

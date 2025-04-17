@@ -10,6 +10,7 @@ import com.javainuse.boot_elasticsearch_crud.mapper.UserMapper;
 import com.javainuse.boot_elasticsearch_crud.model.User;
 import com.javainuse.boot_elasticsearch_crud.service.AuthService;
 import com.javainuse.boot_elasticsearch_crud.service.UserService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -24,6 +25,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@Tag(name = "Auth", description = "Login and Register")
 @RequestMapping("/wikipedia/auth")
 @RequiredArgsConstructor
 public class AuthControllerImpl implements AuthController{
